@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
+
+
+
 *{
     margin: 0;
     padding: 0;
@@ -32,33 +36,28 @@ body{
     top: 10rem;
 }
 
-.profie-card-container{
+
+.profie-card-container {
     background: white;
-    width: 25%;
-    height: 30rem;
-    /* margin-top: 8em; */
-    /* margin: 10rem auto;  */
-     margin-left: auto; 
-    margin-right: auto;
-    margin-top: 4rem;
+    width: 22%;
+    height: 20rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     border-radius: 10px;
-   
-    /* padding: 1rem; */
     overflow: hidden;
 }
+
 .bg-pattern-card{
-    height: 35%;
-    z-index: 0;
+    height: 37%;
+    width: 100%;
+   
 }
 .profile-Pic{
-    /* position: absolute; */
     border-radius: 50%;
-    margin-top: -5rem;
-    /* top:50%;
-    left: 50%; */
+    margin-top: -4rem;
     border: 5px solid white;
-
-
 }
 
 .profile-pic-container{
@@ -70,23 +69,45 @@ body{
 }
 
 .Profile-name-title{
+    margin-top: 4px;
     text-align: center;
    
 }
 .Profile-name-title p{
     font-size: 14px;
-    font-style: italic;
+    color: hsl(227, 10%, 46%);
+    /* font-style: italic; */
+    font-family: "Kumbh Sans", serif;
     /* font-weight: bold;  */
 }
 .Profile-name-title h4{
-    color: hsl(185, 75%, 39%); 
+    color: hsl(229, 23%, 23%);
+    font-size: 18px;
+    font-weight:  700;
+    font-family: "Kumbh Sans", serif;
+}
+.Id-number{
+    color: (227, 10%, 46%);
+    font-weight:  400; 
 }
 
-.profile-Bio{
-    font-size: 12px;
-    padding: 10px 4rem;
-  
+.profile-hr{
+    /* background: rgba(106, 111, 129, 0.1); */
+    font-weight: 400;
+   
 }
+
+.profile-followers{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-family: "Kumbh Sans", serif;
+    margin-top: 12px;
+}              
+.profile-followers p{
+    font-size: 12px;
+}
+
 .Current-time-container{
     position: relative;
  
@@ -104,20 +125,58 @@ body{
 }
 
 .profil-email{
-    font-size: 13px;
-    font-style: italic;
+    font-size: 18px;
+   
     text-align: center;
-    margin-top: 4rem;
+    margin-top: 2rem;
+    padding: 8px;
 }
+
+@media (max-width:1280px){
+    .profie-card-container {
+        width: 33%;}
+
+    .image-top{
+              
+        left: -20rem;
+        top: -14rem;
+    }
+    
+    .image-bottom{
+        left: 48rem;
+        top: 22rem
+    }
+
+
+}
+
 @media screen and (max-width:1024px){
     .profie-card-container {
-        width: 45%;}
+        width: 35%;}
 
         .bg-pattern-card {
             width: 100%;}
 
-            .image-container{
+            body{
+             
+                overflow: hidden;
+            }
+
+            /* .image-container{
                 display: none;
+            } */
+
+
+
+            .image-top{
+              
+                left: -15rem;
+                top: -14rem;
+            }
+            
+            .image-bottom{
+                left: 38rem;
+                top: 18rem;
             }
 }
 
@@ -130,18 +189,38 @@ body{
     .profie-card-container {
         width: 60%;}
 
-        .image-container{
+        /* .image-container{
             display: none;
-        }
+        } */
 }
 
 @media screen and (max-width:375px), (max-width:320px), (max-width:414px), (max-width:430px){
     .profie-card-container {  
-        width: 90%;}
+        width: 70%;
+    height: auto;
+}
 
         .profil-email{
             padding:5px;
             margin-top: 3rem;
+        }
+        .profile-followers{
+            padding: 5px;
+            margin-top: 3px;
+        }
+        .image-top {
+            transform: rotate(70deg);
+            left: -8rem;
+            top: -4rem;
+            width: 100%;
+        }
+        .image-bottom{
+            left:  7rem;
+            top: 25rem;
+            width: 100%;
+        }
+        body{
+            overflow: hidden;
         }
 }
 

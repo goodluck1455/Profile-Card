@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="icon"  href="/Profile.jfif" />
+  <link rel="icon" type="image" href="/Profile.jfif" />
    <link rel="stylesheet" href="style.css">
   <title> Profile card </title>
 
@@ -26,24 +26,35 @@
       <section>
         <div class="profie-card-container">
           <div class="Current-time-container">
-            <p  class="Current-time" data-testid="currentTimeUTC"></p>
+            <!-- <p  class="Current-time" data-testid="currentTimeUTC"></p> -->
            </div>
           <img class="bg-pattern-card" src="./images/bg-pattern-card.svg" alt="" srcset="">
           <div class="profile-pic-container">
-            <img class="profile-Pic" src="./images/Profile.jfif" alt="" data-testid="profilePicture">
+            <img class="profile-Pic" src="./images/image-victor.jpg" alt="" data-testid="profilePicture">
           </div>
          <div class="Profile-name-title">
-          <h4 data-testid="fullName" >  Goodluck Stephen</h4>
-          <p data-testid="jobTitle" >Frontend Developer</p>
-          <p data-testid="currentLocation">Lagos, Nigeria</p>
-          <p class="profile-Bio" data-testid="shortBio">I’m a passionate front-end developer skilled in creating 
-            clean, responsive, and user-friendly web applications</p>
+          <h4 data-testid="fullName" > Victor crest <span class="Id-number">26</span></h4>
+          <p data-testid="jobTitle" >London</p>
+         
          </div> 
 
-
+           
          <div class="profil-email">
-          <p data-testid="emailAddress"> <span>Email: </span>  goodluckstephen237@gmail.com</p>
-          <p data-testid="socialLinks" > <span> Twitter: </span> https://x.com/GoodluckSteph12 </p>
+          <hr class="profile-hr">
+          <div class="profile-followers">
+            <div>
+              <h4>80K</h4>
+              <P>Followers</P>
+            </div>
+            <div>
+              <h4>803K</h4>
+              <p>Likes</p>
+            </div>
+            <div>
+              <h4>1.4K</h4>
+              <p>Photos</p>
+            </div>
+          </div>
         </div>
 
     
