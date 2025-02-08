@@ -162,9 +162,7 @@ body{
                 overflow: hidden;
             }
 
-            /* .image-container{
-                display: none;
-            } */
+          
 
 
 
@@ -200,6 +198,10 @@ body{
     height: auto;
 }
 
+.bg-pattern-container{
+    overflow: hidden;
+}
+
         .profil-email{
             padding:5px;
             margin-top: 3rem;
@@ -208,16 +210,24 @@ body{
             padding: 5px;
             margin-top: 3px;
         }
+
+
         .image-top {
-            transform: rotate(70deg);
-            left: -8rem;
-            top: -4rem;
             width: 100%;
+                position: relative; 
+                transform: rotate(57deg);
+                left: -7rem;
+                top: -5rem;
+            
         }
+
+
         .image-bottom{
-            left:  7rem;
-            top: 25rem;
             width: 100%;
+            position: relative;
+            left: 3rem;
+            top: 2rem;
+           
         }
         body{
             overflow: hidden;
