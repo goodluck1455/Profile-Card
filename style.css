@@ -132,6 +132,28 @@ body{
     padding: 8px;
 }
 
+
+@media (max-width:1440px){
+    .image-bottom {
+        position: absolute;
+        content: "";
+        width: 65%;
+        transform: rotate(10deg);
+        left: 48rem;
+        top: 14rem;
+    }
+
+    .image-top {
+        position: absolute;
+        content: "";
+        width: 65%;
+        transform: rotate(25deg);
+        left: -14rem;
+        top: -20rem;
+    }
+}
+
+
 @media (max-width:1280px){
     .profie-card-container {
         width: 33%;}
